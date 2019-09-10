@@ -22,11 +22,11 @@
 <script>
 $('#btn').click(function(){
 	alert('클릭클릭');
-	location.assign('<%=request.getContextPath()%>/member.do?action=move&dest=login');
+	location.assign('<%=request.getContextPath()%>/customers.do?page=login');
 });	
 $('#a_join').click(function(){
 	alert('조인조인');
-	location.assign('<%=request.getContextPath()%>/member.do?action=move&dest=join');
+	location.assign('<%=request.getContextPath()%>/customers.do?page=join');
 });	
 
 </script>

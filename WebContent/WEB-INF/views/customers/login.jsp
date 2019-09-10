@@ -9,10 +9,13 @@
 </head>
 <body>
 <h3>은행프로그램 로그인</h3>
-	<form id="login" action="<%=request.getContextPath()%>/member.do">
+	<form id="login" action="<%=request.getContextPath()%>/customers.do">
+		<input type="hidden" name="action" value="login"/>
+		<input type="hidden" name="page" value="mypage"/>
 		아이디<input type="text" name="id"/><br />
 		비밀번호<input type="password" name="pw"/><br />
 		<input type="submit" value="전송"/>
+		${page}
 	</form>
 <script>
 $('login').submit(function(){
